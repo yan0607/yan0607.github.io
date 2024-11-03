@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>厳海旻のページ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 1.5em; 
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #fff; 
+        }
+        header {
+            background-color: #fff;
+            padding: 1.5em 0;
+            text-align: center;
+        }
+        header h1 {
+            display: none; 
+        }
+        section {
+            padding: 2em;
+            max-width: 1300px; 
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 8px;
+            position: relative;
+        }
+        .header-section {
+            display: flex;
+            align-items: center;
+            padding-bottom: 0.3em;
+        }
+        .header-section h2 {
+            font-size: 2em; 
+            color: #333;
+            margin: 0;
+            flex-grow: 1;
+        }
+        .header-section img {
+            width: 250px; /* 放大4倍 */
+            height: auto;
+        }
+        .red-line {
+            border-bottom: 3px solid #d9534f; /* 红色横线 */
+            margin-top: 0.3em;
+            margin-bottom: 1em;
+        }
+        .about-section {
+            display: flex;
+            gap: 1em;
+            position: relative;
+        }
+        .info {
+            line-height: 1.8;
+            flex-grow: 1; 
+        }
+        .about-section img {
+            width: 280px;
+            height: auto;
+            border: 2px solid #333;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .research-section h2 {
+            font-size: 2em; 
+            color: #333;
+            padding-bottom: 0.3em;
+        }
+        .research-section h2 + .red-line {
+            border-bottom: 3px solid #d9534f; /* “研究実績”下方的红色横线 */
+            margin-top: 0.3em;
+            margin-bottom: 1em;
+        }
+        .research-section h3, h3.name-title {
+            font-size: 1.8em; /* 将小标题增大一个字号 */
+            margin-top: 1.5em;
+            color: #333;
+        }
+        .research-section .item {
+            margin-top: 0.8em;
+            padding-left: 1.5em;
+            text-indent: -1.5em;
+            font-size: 1.1em;
+        }
+        .award-image {
+            display: block;
+            margin: 1em auto;
+            width: 80%;
+            border: 1px solid #ddd;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1> </h1>
+</header>
+
+<section>
+    <!-- 在個人情報的标题行上添加R.jpg图片 -->
+    <div class="header-section">
+        <h2>個人情報</h2>
+        <img src="images/R.jpg" alt="R Logo">
+    </div>
+    <div class="red-line"></div> <!-- 個人情報下方的红色横线 -->
+    
+    <h3 class="name-title">氏名：厳　海旻（YAN　HAIMIN）</h3>
+    <div class="about-section">
+        <!-- 个人信息 -->
+        <div class="info">
+            <p>出身：中国・福建省
+            <p>大学及び専攻：立命館大学・理工学研究科・電子システム専攻</p>
+            <p>所属研究室：富山研究室</p>
+            <p>研究内容：ドローンが搭載できる物体検出モデルの研究に取り組んでいます</p>
+            <p>趣味：スキー , バイク , 新しいことを挑戦します</p>
+            <p>人生目標：画像認識の技術を活かし、より安全かつ便利な社会を実現します</p>
+        </div>
+        
+        <!-- 个人照片，右对齐且顶部对齐 -->
+        <img src="images/profile.jpg" alt="私の写真">
+    </div>
+</section>
+
+<section class="research-section">
+    <h2>研究実績</h2>
+    <div class="red-line"></div> <!-- 研究実績下方的红色横线 -->
+    
+    <h3>国内学会</h3>
+    <div class="item">
+        1. 発表テーマ：ドローンによる駐車場の自動巡回<br>
+        情報処理学会組込みシステム研究会, 横浜, 2023年11月. 口頭.
+    </div>
+    <div class="item">
+        2. 発表テーマ：YOLO-UTS：ドローン向けの軽量化YOLOによる交通監視<br>
+        情報処理学会組込みシステム研究会, 東京, 2024年7月. 口頭.
+    </div>
+    <div class="item">
+        3. 発表テーマ：Advanced Detector for Small Object Detection in UAV Aerial Imagery<br>
+        MIRU, 熊木, 2024年8月. ポスター.
+    </div>
+    <div class="item">
+        4. 発表テーマ：自律飛行ドローンのための高性能かつ軽量な物体検出手法<br>
+        情報処理学会組込みシステム研究会, 横浜, 2024年11月. 口頭.
+    </div>
+
+    <h3>国際学会</h3>
+    <div class="item">
+        1. 発表テーマ：Automatic Drone Patrol of Parking Lots Using YOLO and MiDaS Neural Networks<br>
+        Itc-cscc, 沖縄, 2024年7月. 口頭.
+    </div>
+    <div class="item">
+        2. 発表テーマ：YOLO-UTS: Lightweight YOLOv5 for UAV Traffic Monitoring and Surveillance(受賞あり)<br>
+        IEEE International Conference on Systems, Man, and Cybernetics, マレーシア, 2024年10月. 口頭.
+    </div>
+    <div class="item">
+        3. 発表テーマ：YOLO-ELD: Efficient and Lightweight Detection for UAV Aerial Imagery<br>
+        IEEE International Conference on Systems, Man, and Cybernetics, マレーシア, 2024年10月. 口頭.
+    </div>
+
+    <h3>ジャーナル</h3>
+    <div class="item">
+        1. 発表テーマ：ST-YOLO: An Enhanced Detector for Small Objects in UAV Aerial Imagery<br>
+        IEEE Internet of Things Journal （審査中）
+    </div>
+
+    <h3>受賞</h3>
+    <div class="item">
+        1. IEEE SMC Young Researcher Award
+    </div>
+    <img src="images/award.jpg" alt="IEEE SMC Young Researcher Award" class="award-image">
+</section>
+
+<footer>
+    <p>&copy; 2024 厳海旻. すべての権利を保有しています。</p> 
+</footer>
+
+</body>
+</html>
